@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: "Raleway", sans-serif;
+}
+
+/*Navbar*/
+.navLogo {
+    color: rgb(248, 0, 136);
+}
+
+
+/*Hero*/
+.hero-section {
+    height: 90vh; /* Full viewport height */
+    background: url('./public/nail-technician.jpg') no-repeat center center/cover;
+    position: relative;
+    color: white;
+  }
+
+
+
+.counter-color {
+    color: blue;
+}
