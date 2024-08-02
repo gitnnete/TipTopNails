@@ -13,7 +13,7 @@ body {
 /*Hero*/
 .hero-section {
     height: 90vh; /* Full viewport height */
-    background: url('./src/assets/nail-technician.jpg') no-repeat center center/cover;
+    background: url('./assets/nail-technician.jpg') no-repeat center center/cover;
     position: relative;
     color: white;
   }
