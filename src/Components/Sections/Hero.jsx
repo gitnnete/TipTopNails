@@ -44,7 +44,7 @@ const Hero = () => {
             class="btn btn-outline-danger btn-lg mt-5"
             data-aos="fade-up"
           >
-            Danger
+            Contact Us
           </button>
         </div>
       </div>

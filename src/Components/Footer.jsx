@@ -12,7 +12,6 @@ const Footer = () => {
           >
             TipTopNails.
           </a>
-          \
           <div>
             <p className="mt-4">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.

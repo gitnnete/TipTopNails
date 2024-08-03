@@ -1,10 +1,20 @@
+// src/components/Navbar.jsx
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
 const Navbar = () => {
+  const handleNavLinkClick = () => {
+    const navbarToggler = document.querySelector(".navbar-toggler");
+    const navbarCollapse = document.querySelector(".navbar-collapse");
+
+    if (navbarToggler && navbarCollapse.classList.contains("show")) {
+      navbarToggler.click();
+    }
+  };
+
   useEffect(() => {
     AOS.init({
       duration: 1000, // Animation duration
@@ -14,13 +24,18 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container">
-        <a class="navLogo navbar-brand fw-bold fs-3" data-aos="fade-right" href="#">
+    <nav className="navbar navbar-expand-lg bg-body-tertiary">
+      <div className="container">
+        <NavLink
+          className="navbar-brand navLogo fw-bold fs-3"
+          data-aos="fade-right"
+          to="/"
+          onClick={handleNavLinkClick}
+        >
           TipTopNails.
-        </a>
+        </NavLink>
         <button
-          class="navbar-toggler"
+          className="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarNav"
@@ -28,24 +43,42 @@ const Navbar = () => {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"></span>
+          <span className="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto" data-aos="fade-right">
-            <li class="nav-item">
-              <Link class="nav-link active mx-3 fs-5" to="/">
+        <div className="collapse navbar-collapse" id="navbarNav">
+          <ul className="navbar-nav ms-auto" data-aos="fade-right">
+            <li className="nav-item mx-3 fs-5">
+              <NavLink
+                className={({ isActive }) =>
+                  isActive ? "nav-link active" : "nav-link"
+                }
+                to="/"
+                onClick={handleNavLinkClick}
+              >
                 Home
-              </Link>
+              </NavLink>
             </li>
-            <li class="nav-item">
-              <Link className="nav-link mx-3 fs-5" to="/OurStory">
+            <li className="nav-item mx-3 fs-5">
+              <NavLink
+                className={({ isActive }) =>
+                  isActive ? "nav-link active" : "nav-link"
+                }
+                to="/OurStory"
+                onClick={handleNavLinkClick}
+              >
                 Our Story
-              </Link>
+              </NavLink>
             </li>
-            <li class="nav-item">
-              <Link className="nav-link mx-3 fs-5" to="/Contact">
+            <li className="nav-item mx-3 fs-5">
+              <NavLink
+                className={({ isActive }) =>
+                  isActive ? "nav-link active" : "nav-link"
+                }
+                to="/contact"
+                onClick={handleNavLinkClick}
+              >
                 Contact
-              </Link>
+              </NavLink>
             </li>
           </ul>
         </div>

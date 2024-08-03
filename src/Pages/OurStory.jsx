@@ -1,10 +1,14 @@
 import React from 'react'
+import OurStoryHead from '../Components/Sections/OurStoryHead'
+import OurStoryBody from '../Components/Sections/OurStoryBody'
+
 
 const OurStory = () => {
   return (
-    <div className='bg-success text-light'>
-        This is page 2
-    </div>
+    <>
+    <OurStoryHead />
+    <OurStoryBody />
+    </>
   )
 }
 

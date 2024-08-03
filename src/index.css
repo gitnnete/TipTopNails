@@ -9,6 +9,12 @@ body {
     color: rgb(248, 0, 136);
 }
 
+.navbar-nav .nav-link.active {
+    font-weight: bold;
+    color: rgb(248, 0, 136); /* Custom color for active link */
+  }
+
+
 
 /*Hero*/
 .hero-section {
@@ -20,6 +26,15 @@ body {
 
 
 
+
 .counter-color {
     color: blue;
 }
+
+
+
+
+
+
+
+/*Footer*/
