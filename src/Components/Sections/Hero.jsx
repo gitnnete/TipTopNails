@@ -1,10 +1,18 @@
 import React from "react";
+import { useNavigate } from 'react-router-dom';
 import { useEffect } from "react";
 import { TypeAnimation } from "react-type-animation";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
 const Hero = () => {
+  const navigate = useNavigate();
+
+  const handleButtonClick = () => {
+    navigate('/Contact'); // Navigate to another page
+  };
+
+
   useEffect(() => {
     AOS.init({
       duration: 1000, // Animation duration
@@ -43,6 +51,7 @@ const Hero = () => {
             type="button"
             class="btn btn-outline-danger btn-lg mt-5"
             data-aos="fade-up"
+            onClick={handleButtonClick}
           >
             Contact Us
           </button>
