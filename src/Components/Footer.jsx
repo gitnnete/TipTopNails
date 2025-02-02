@@ -14,10 +14,10 @@ const Footer = () => {
           </a>
           <div>
             <p className="mt-4">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Architecto quidem aliquam voluptatibus, incidunt vero eius fugiat
-              adipisci alias veniam aperiam dignissimos, placeat non voluptatum
-              corporis quaerat eum laborum reprehenderit culpa!
+              <p class="text-center text-muted mt-4">
+                © 2019 Tip Top Nails. All rights reserved. Built by{" "}
+                <strong>Nnete Phasha</strong>.
+              </p>
             </p>
           </div>
         </div>

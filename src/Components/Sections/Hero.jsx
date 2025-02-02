@@ -17,7 +17,6 @@ const Hero = () => {
     AOS.init({
       duration: 1000, // Animation duration
       once: true, // Whether animation should happen only once - while scrolling down
-      // Additional options can be added here
     });
   }, []);
 
