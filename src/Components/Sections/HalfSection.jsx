@@ -29,7 +29,7 @@ const HalfSection = () => {
             />
           </div>
           <div className="col-md-6 mt-5" data-aos="fade-right">
-            <h2 className="text-danger fw-bold mb-4">Top Notch Facilities</h2>
+            <h2 className="text-danger fw-bold mb-4">Our Top Notch Facilities</h2>
             <p className="lead">
               Welcome to our nail salon, where luxury meets comfort. Our
               state-of-the-art facilities are designed to provide you with an
